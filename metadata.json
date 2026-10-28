@@ -1,0 +1,6 @@
+{
+  "name": "TenantPOS",
+  "description": "Aplikasi POS Multi-Tenant untuk manajemen stok, transaksi penjualan, dan laporan keuangan real-time dengan barcode & print thermal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

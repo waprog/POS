@@ -1,0 +1,59 @@
+{
+  "entities": {
+    "Product": {
+      "path": "users/{userId}/products/{productId}",
+      "schema": {
+        "id": "string",
+        "name": "string",
+        "category": "string",
+        "barcode": "string",
+        "buyPrice": "number",
+        "sellPrice": "number",
+        "stock": "number",
+        "minStock": "number",
+        "userId": "string",
+        "updatedAt": "timestamp"
+      }
+    },
+    "Customer": {
+      "path": "users/{userId}/customers/{customerId}",
+      "schema": {
+        "id": "string",
+        "name": "string",
+        "phone": "string",
+        "email": "string",
+        "points": "number",
+        "totalSpent": "number",
+        "visitCount": "number",
+        "userId": "string",
+        "updatedAt": "timestamp"
+      }
+    },
+    "Transaction": {
+      "path": "users/{userId}/transactions/{transactionId}",
+      "schema": {
+        "id": "string",
+        "invoiceNo": "string",
+        "totalAmount": "number",
+        "paymentMethod": "string",
+        "customerId": "string",
+        "customerName": "string",
+        "cashierName": "string",
+        "userId": "string",
+        "timestamp": "timestamp"
+      }
+    },
+    "StockIn": {
+      "path": "users/{userId}/stockIns/{stockInId}",
+      "schema": {
+        "id": "string",
+        "productId": "string",
+        "productName": "string",
+        "quantityAdded": "number",
+        "supplier": "string",
+        "userId": "string",
+        "date": "timestamp"
+      }
+    }
+  }
+}
